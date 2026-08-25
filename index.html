@@ -202,11 +202,11 @@
   }
   .cta-banner::after{
     content:""; position:absolute; right:-60px; top:-60px; width:260px; height:260px; border-radius:50%;
-    background:rgba(255,255,255,.14);
+    background:rgba(255,255,255,.14); pointer-events:none;
   }
   .cta-banner h3{ font-size:24px; font-weight:900; position:relative; }
   .cta-banner p{ font-size:14px; opacity:.9; margin-top:8px; position:relative; }
-  .cta-banner .cta-btn{ background:#fff; color:var(--sky-deep); position:relative; }
+  .cta-banner .cta-btn{ background:#fff; color:var(--sky-deep); position:relative; z-index:2; }
   .cta-banner .cta-btn:hover{ box-shadow:0 16px 30px -10px rgba(0,0,0,.25); }
 
   /* ---------- Footer ---------- */
@@ -457,7 +457,7 @@
           <h3>3 分鐘，取得您的專屬保費試算</h3>
           <p>不需要臨櫃，也不需要等候，線上完成投保只要幾個步驟。</p>
         </div>
-        <a href="https://bluesky-online-quota.vercel.app" class="cta-btn" rel="noopener">開始試算保費</a>
+        <a href="https://bluesky-online-quota.vercel.app" class="cta-btn">開始試算保費</a>
       </div>
     </div>
   </section>
